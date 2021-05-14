@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    min-height: 700px;
+    font-family: 'Reggae One', cursive;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 35vh;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.play-again {
+    padding: 1em 1.5em;
+    font-size: min(4vw, 4vh);
+    font-weight: 700;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Reggae One', cursive;
+}
+
+.hint {
+    padding: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.title {
+    position: absolute;
+    font-size: 6vw;
+    top: 12vh;
+    text-align: center;
+    width: 100%;
+}
+
+.hidden-number {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    font-size: 4.5em;
+    height: 16vh;
+    width: 15vw;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+}
+
+@media screen and (orientation: landscape) {
+    .title {
+        top: 15vh;
+        font-size: 7vh;
+    }
+
+    header {
+        height: 40vh;
+    }
+
+    .hidden-number {
+        font-size: 12vh;
+    }
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+}
+
+.insert-number,
+.score {
+    height: 20vh;
+    width: 30vw;
+    font-size: 1.3em;
+    padding: 1em;
+    border: 2px solid white;
+}
+
+.score {
+    margin-left: 1em;
+    line-height: 2em;
+}
+
+#number {
+    height: 8vh;
+    width: 17vw;
+    font-size: 2em;
+    padding-left: 1em;
+    font-family: 'Reggae One', cursive;
+    border: 1px solid white;
+    color: black;
+    background-color: lightgray;
+}
+
+#check-btn {
+    padding: 0.8em 1.5em;
+    margin-top: 0.9em;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: black;
+    font-family: 'Reggae One', cursive;
+    cursor: pointer;
+}
